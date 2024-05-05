@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>WZD</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+  
+  <style>
+    .name-inputs, .address-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-inputs div, .address-inputs div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+    .name-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-inputs div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid maroon;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    input[type="text"]:focus,
+    input[type="tel"]:focus {
+    outline: none;
+    border-color: maroon;
+    background-color: white;
+}
+
+    .container {
+      display: flex;
+    }
+    .box-1 {
+      height: 700px;
+      width: 800px;
+      background-color: black;
+      margin-right: 20px;
+      overflow-y: auto; 
+      border-radius: 10px; 
+      overflow: hidden;
+      padding: 0%;
+    }
+    .box-2 {
+      height: 450px;
+      width: 800px;
+      background-color: black;
+      border-radius: 10px; 
+      overflow: hidden;
+      padding: 0%;
+      color: white;
+    }
+    .card-form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+.card-form label {
+    font-weight: bold;
+}
+
+.card-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card-form input[type="text"]:focus {
+    outline: none;
+    border-color: maroon;
+}
+.card-details {
+    display: flex;
+}
+
+.card-details input[type="text"] {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.card-details input[type="text"]:last-child {
+    margin-right: 0;
+}
+.payment-method label {
+        color: white; /* Change to your desired color */
+    }
+    .discount-section {
+    display: flex;
+    align-items: center;
+}
+
+#discount_code {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#apply_discount_btn {
+    padding: 5px 10px;
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-image {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+.product-info {
+    overflow: hidden; /* Clear floats */
+}
+.pre-order-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pre-order-item {
+    margin-bottom: 20px;
+}
+
+  </style>
+  
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo2.png" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html#carousel" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html" class="navbar-link" data-nav-link>shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="team.html" class="navbar-link" data-nav-link>teams</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#news" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#footer" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+  <section class="section checkout" id="checkout">
+    <div class="container">
+      <div class="box-1" style="height: 650px; overflow: auto;">
+        <h2 style="color: white">Contact Information</h2>
+        <form action="#" method="post">
+
+            <input type="text" id="country" name="country" placeholder="Country/Region" required>
+    
+            <div class="name-inputs">
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+    
+            <input type="text" id="address" name="address" placeholder="Address" required>
+    
+            <input type="text" id="apartment" name="apartment" placeholder="Apartment (optional)">
+    
+            <div class="address-inputs">
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <input type="text" id="state" name="state" placeholder="State" required>
+                <input type="text" id="zip" name="zip" placeholder="Zip Code" required>
+            </div>
+    
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    
+            <h2 style="color: white;">Payment Method</h2>
+              <div class="payment-method">
+                <select id="payment" name="payment">
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select><br><br>
+
+              <div class="card-form">
+                <input type="text" id="card_number" name="card_number" placeholder="Card Number" required>
+                <input type="text" id="card_name" name="card_name" placeholder="Name on Card" required>
+             <div class="card-details">
+                <input type="text" id="expiration_date" name="expiration_date" placeholder="Expiration date (MM/YY)" required>
+                <input type="text" id="scode" name="scode" placeholder="Security Code" required>
+              </div>
+            </div>
+         </div>
+
+          <button class="btn" id="checkout-btn">Pay Now</button>
+        </form>
+    </div>
+    
+    
+    
+    <div class="box-2">
+      <h2>Pre-Order</h2>
+      <!-- Pre-order items in list format -->
+      <ul class="pre-order-list">
+          <li class="pre-order-item">
+              <img src="assets/images/p1.jpg" alt="Pre-order Item 1" class="product-image">
+              <div class="product-info">
+                  <p><strong>Pre-order Item 1 Name</strong></p>
+                  <p>$180.00</p>
+              </div>
+          </li>
+      </ul><br><br>
+  
+      <!-- Discount code input field with Apply button -->
+      <div class="discount-section">
+          <input type="text" id="discount_code" name="discount_code" placeholder="Enter discount code">
+          <button id="apply_discount_btn">Apply</button>
+      </div>
+  
+      <!-- Subtotal, shipping, and total -->
+      <div class="order-summary">
+          <div>
+              <p>Subtotal:</p>
+              <p>$180.00</p>
+          </div>
+          <div>
+              <p>Shipping:</p>
+              <p>$10.00</p>
+          </div>
+          <div>
+              <p>Total:</p>
+              <p>$190.00</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; Wolvezden 2024 All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  
+</body>
+
+</html>

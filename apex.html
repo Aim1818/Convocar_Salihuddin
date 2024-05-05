@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>WZD</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+<style>
+   .container-apex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px; /* Adjust spacing between rows */
+}
+
+.container-box {
+    flex-basis: calc(33.33% - 20px); /* 3 columns with spacing between */
+    margin-right: 10px; /* Adjust spacing between columns */
+    margin-bottom: 10px; /* Adjust spacing between rows */
+    border: 5px maroon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box:last-child {
+    margin-right: 0;
+}
+
+.button {
+    margin-top: 10px; /* Adjust spacing between button and container */
+}
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      width: 400px; /* Same width as the card */
+      height: auto; /* Auto height */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 10px;
+      z-index: 1;
+      overflow-y: scroll;
+    }
+
+    /* Style the paragraphs inside the dropdown content */
+    .dropdown-content p {
+      margin: 10px 0;;
+      color: #333;
+    }
+
+
+
+</style>
+  
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo2.png" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html#carousel" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html" class="navbar-link" data-nav-link>shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="team.html" class="navbar-link" data-nav-link>teams</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#news" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#footer" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <section class="section products" id="products">
+    <div class="container-apex">
+        <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">
+            Meet the Team
+        </p>
+        <h2 class="h2 section-title" data-reveal="bottom">
+          APEX
+        </h2>
+
+        <div class="row">
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 1">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn1">See Profile</button>
+              <div class="dropdown-content" id="profileDropdown1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+              </div>
+            </div>
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 2">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn2">See Profile</button>
+              <div class="dropdown-content" id="profileDropdown2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+              </div>
+            </div>
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 3">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn3">See Profile</button>
+                <div class="dropdown-content" id="profileDropdown3">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 4">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn4">See Profile</button>
+              <div class="dropdown-content" id="profileDropdown4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+              </div>
+            </div>
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 5">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn5">See Profile</button>
+              <div class="dropdown-content" id="profileDropdown5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+              </div>
+            </div>
+            <div class="container-box">
+                <img src="assets/images/Apex.png" alt="Photo 6">
+                <h3>Name 1</h3>
+                <button class="btn btn-primary" id="seeProfileBtn6">See Profile</button>
+              <div class="dropdown-content" id="profileDropdown6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In nibh mauris cursus mattis molestie a. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. </p>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  
+  
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <section class="footer" id="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/wzd_logo.png" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Useful Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              Zamboanga City
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Wolvezden@gmail.com" class="contact-link">Wolvezden@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:09123456789" class="contact-link">09123456789</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; Wolvezden 2024 All Rights Reserved.
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script>
+    // JavaScript for toggling dropdowns
+    function toggleDropdown(buttonId, dropdownId) {
+      document.getElementById(buttonId).addEventListener("click", function() {
+        var dropdownContent = document.getElementById(dropdownId);
+        dropdownContent.style.display = dropdownContent.style.display === "none" ? "block" : "none";
+      });
+    }
+
+    // Toggle dropdowns for each card
+    toggleDropdown("seeProfileBtn1", "profileDropdown1");
+    toggleDropdown("seeProfileBtn2", "profileDropdown2");
+    toggleDropdown("seeProfileBtn3", "profileDropdown3");
+    toggleDropdown("seeProfileBtn4", "profileDropdown4");
+    toggleDropdown("seeProfileBtn5", "profileDropdown5");
+    toggleDropdown("seeProfileBtn6", "profileDropdown6");
+    // Repeat the above line for more buttons and dropdowns (e.g., seeProfileBtn3, profileDropdown3, etc.)
+  </script>
+</body>
+
+</html>
